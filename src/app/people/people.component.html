@@ -1,0 +1,10 @@
+<h2>People of Star Wars</h2>
+
+<ul class="people">
+  <li *ngFor="let people of peoples">
+      <a routerLink="/detail/{{people.id}}">
+    <span class="badge">{{people.id}}</span> {{people.name}}
+      </a>
+  </li>
+</ul>
+
